@@ -1,32 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo de advinhação</title>
-    <script src="scrips.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/icone.png" type="image/png">
+    <title>Cadastro de clientes</title>
 </head>
 <body>
-    <header>
-        <h1>Jogo de advinhação</h1>
-    </header>
+    <button id="botaoTema">☀︎</button>
     <main>
-        <section id="explicao">
-            <h2>como o jogo funciona?</h2>
-            <p>Esse e um jogo em que você deve tentar advinhar qual o numero secreto <br>
-                em no maximo 10 tentativas o numero esta localizando entre 1 e 100
-            </p>
-        </section>
-        <section>
-            <label for="palpite" >digite seu palpite:</label><br>
-            <input type="number" id="palpite" placeholder="Digite apenas numeros"><br>
-            <button onclick="chute()">chutar</button>
-            <p id="dica"></p>
-            <p id="chances"></p>
-        </section>
+        <h1>Cadastro de clientes</h1>
+        <h2>Dados Pessoais:</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="numeroTelefone">Numero de Telefone:</label>
+        <input type="tel" id="numeroTelefone" name="numeroTelefone" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento" required>
+        <h2>Endereço:</h2>
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required>
+        <label for="logradouro">Logradouro:</label>
+        <input type="text" id="logradouro" name="logradouro" required>
+        <label for="numero">Numero:</label>
+        <input type="text" id="numero" name="numero" required>
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" required>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required>
+        <button type="submit">Cadastrar</button>
+
+
     </main>
-    
 </body>
+<script src="script.js"></script>
 </html>
